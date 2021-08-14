@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/375ff28a66.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="PicsArt_05-21-02.38.18.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="animation-area">
+        <ul class="box-area">
+            
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="container">
+        <form action="" name="calc" class="calculator">
+            <input type="text" readonly class="value" name="txt" />
+            <span class="number clear" onclick="calc.txt.value =''">clear</span>
+            <span class="number" onclick="document.calc.txt.value +='-'">-</span>
+            <span class="number" onclick="document.calc.txt.value +='*'">x</span>
+            <span class="number" onclick="document.calc.txt.value +='7'">7</span>
+            <span class="number" onclick="document.calc.txt.value +='8'">8</span>
+            <span class="number" onclick="document.calc.txt.value +='9'">9</span>
+            <span class="number plus" onclick="document.calc.txt.value +='+'">+</span>
+            <span class="number" onclick="document.calc.txt.value +='4'">4</span>
+            <span class="number" onclick="document.calc.txt.value +='5'">5</span>
+            <span class="number" onclick="document.calc.txt.value +='6'">6</span>
+            <span class="number" onclick="document.calc.txt.value +='/'">/</span>
+            <span class="number" onclick="document.calc.txt.value +='1'">1</span>
+            <span class="number" onclick="document.calc.txt.value +='2'">2</span>
+            <span class="number" onclick="document.calc.txt.value +='3'">3</span>
+
+            <span class="number" onclick="document.calc.txt.value +='.'">.</span>
+            <span class="number" onclick="document.calc.txt.value +='00'">00</span>
+            <span class="number" onclick="document.calc.txt.value +='0'">0</span>
+            <span class="number equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+            <a href="https://vishakkr.github.io/VishakKR/" style="color: aliceblue;
+            font-size: 12px;
+            text-decoration: none;">© Vishak </a>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".container"), {
+        max: 25,
+        speed: 400
+    });
+
+</script>
+</body>
+</html>
